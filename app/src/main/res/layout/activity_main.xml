@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchMode="columnWidth"
+    android:background="@android:color/darker_gray"
+    android:padding="@dimen/grid_space"
+    tools:context="com.example.afanasenko.lesson5.MainActivity">
+
+       <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/grid_space"
+        android:verticalSpacing="@dimen/grid_space"
+        android:numColumns="@integer/num_col_p"
+        android:id="@+id/list"/>
+</LinearLayout>
