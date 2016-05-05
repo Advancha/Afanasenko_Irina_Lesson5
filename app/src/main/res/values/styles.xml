@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="My_Buttons">
+        <item name="android:layout_marginBottom">@dimen/grid_space</item>
+        <item name="android:layout_marginLeft">@dimen/grid_space</item>
+        <item name="android:layout_marginTop">@dimen/grid_space</item>
+        <item name="android:layout_marginRight">@dimen/grid_space</item>
+        <item name="android:layout_width">@dimen/zero_width</item>
+        <item name="android:layout_weight">@integer/button_weight</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorLightGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+    </style>
 </resources>

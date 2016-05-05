@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="num_col_p">3</integer>
+    <integer name="num_col_ptr">3</integer>
+    <integer name="button_weight">1</integer>
+    <integer name="max_app_num">6</integer>
 </resources>

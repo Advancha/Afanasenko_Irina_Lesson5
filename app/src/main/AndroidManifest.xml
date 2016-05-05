@@ -8,17 +8,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:launchMode="singleTask"
+        <activity
+            android:name=".MainActivity"
             android:excludeFromRecents="true"
+            android:launchMode="singleTask"
             android:screenOrientation="nosensor">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.ALL_APPS" />
                 <!-- The following two intent-filters are the key to set homescreen -->
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="android.intent.category.HOME"/>
-                <category android:name="android.intent.category.DEFAULT" />
+                 />
+                />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
