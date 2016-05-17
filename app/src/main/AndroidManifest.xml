@@ -16,7 +16,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.ALL_APPS" />
                 <!-- The following two intent-filters are the key to set homescreen -->
-                 />
+                />
                 />
             </intent-filter>
         </activity>
@@ -26,6 +26,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DialogActivity"
+            android:label="About application"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog">
+
         </activity>
     </application>
 

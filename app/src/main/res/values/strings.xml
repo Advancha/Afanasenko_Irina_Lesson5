@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Launcher</string>
     <string name="applications">Applications</string>
+    <string name="mysettings">mysettings</string>
+    <string name="remove">Remove</string>
+    <string name="about">About app</string>
+    <string name="close">Close</string>
 </resources>

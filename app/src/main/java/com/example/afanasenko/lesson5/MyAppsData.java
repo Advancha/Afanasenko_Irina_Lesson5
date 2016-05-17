@@ -20,11 +20,14 @@ public class MyAppsData {
     private boolean mMounted;
     private final File mApkFile;
 
-    public MyAppsData(Context context, ApplicationInfo info) {
+    private boolean mChecked;
+
+    public MyAppsData(Context context, ApplicationInfo info, boolean checked) {
                mContext = context;
                mInfo = info;
 
                mApkFile = new File(info.sourceDir);
+               mChecked = checked;
             }
 
 
@@ -66,6 +69,14 @@ public class MyAppsData {
 
                 return mContext.getResources().getDrawable(android.R.drawable.sym_def_app_icon);
              }
+
+    public void setmChecked(boolean mChecked) {
+        this.mChecked = mChecked;
+    }
+
+    public boolean ismChecked() {
+        return mChecked;
+    }
 
     void loadLabel(Context context) {
                  if (mAppLabel == null || !mMounted) {
