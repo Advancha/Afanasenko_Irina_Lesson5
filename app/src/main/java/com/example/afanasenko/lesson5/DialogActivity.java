@@ -28,19 +28,15 @@ public class DialogActivity extends Activity {
 
         TextView textView=(TextView)findViewById(R.id.app_description_text);
         textView.setText(app_name);
-
-
     }
 
     public void onClickDellButtonDialog(View view) {
-
         Intent intent = new Intent(Intent.ACTION_DELETE);
         intent.setData(Uri.parse("package:"+app_pn));
         startActivity(intent);
     }
 
     public void onClickCloseButtonDialog(View view) {
-
         finish();
     }
 }
